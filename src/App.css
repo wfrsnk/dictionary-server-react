@@ -1,0 +1,101 @@
+body{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  background-color: rgb(44, 55, 61);
+  color:rgb(44, 55, 61);
+}
+h3 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 200;
+}
+.container {
+  box-sizing: border-box;
+  background-color: rgb(204, 204, 204);
+  margin: 0% 10% 2% 10%;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0px 5px 2px rgb(67, 78, 83);
+}
+.container.head {
+  margin: 2% 5% 2% 5%;
+  text-align: center;
+}
+
+
+
+.btn{
+display: flex;
+justify-content: center;
+}
+
+.button{
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(204, 204, 204);
+  margin: 10px 0;
+  width: 200px;
+  height: 40px;
+}
+.button.save {
+  background-color: rgb(44, 55, 61);
+  color:rgb(204, 204, 204);
+}
+
+
+.modal{
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.modal.active{
+  opacity: 1;
+  pointer-events: all;
+
+}
+
+.modalContent{
+  padding: 20px;
+  background-color: rgb(204, 204, 204);
+  border-radius: 10px;
+  transform: scale(0.5);
+  transition: 0.5s ;
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.modalContent.active{
+  transform: scale(1);
+}
+
+.input {
+  border: none;
+  border-radius: 5px;
+  height: 50px;
+  width: 45vw;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+.input.description {
+  height: 100px;
+}
+
+.formContainer {
+  position: relative;
+  display: flexbox;
+  justify-content: center;
+
+}
+
