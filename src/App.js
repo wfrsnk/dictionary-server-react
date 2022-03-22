@@ -14,7 +14,7 @@ class App extends React.Component {
       active: false,
     }
   }
-
+  // 12
   componentDidMount() {
     fetch('/api/terms').then(res => res.json()).then(data => {
       this.setState({terms: this.state.terms.concat(data) });
