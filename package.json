@@ -19,7 +19,7 @@
   "scripts": {
     "start": "node server.js",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "editorconfig-checker --exclude '.git|node_modules|. DS_Store'",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
